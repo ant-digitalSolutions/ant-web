@@ -1,10 +1,11 @@
 @import "/src/styles.scss";
 
 * {
-    font-family: "Figtree";
+  font-family: "Figtree";
 }
 
 .outer-container {
+  font-family: "Figtree";
   background-color: $main-red;
   border: solid white 20px;
   max-width: 860px;
@@ -17,6 +18,8 @@
   left: 0;
   margin: auto;
 
+  position: relative;
+
   .header {
     position: relative;
     h1 {
@@ -24,7 +27,7 @@
       color: white;
       font-weight: 700;
       text-transform: uppercase;
-      
+
       letter-spacing: 47px;
       text-align: initial;
       vertical-align: top;
@@ -57,28 +60,79 @@
     }
 
     .identity-container {
+        img {
+            max-width: 75%;
+        }
     }
 
     .email-form {
       border-bottom: solid white 1px;
-      width: 200px;
-      input {
+      width: 350px;
+      margin-top: 40px;
+      position: relative;
+      input,
+      button {
         background: transparent;
         border: none;
         color: white;
         font-size: 0.6rem;
         font-weight: 300;
+        letter-spacing: 3px;
+
+        &.email {
+          width: 100%;
+          min-width: 250px;
+        }
+        &.notify-btn {
+          border-left: solid white 1px;
+          font-size: 0.5rem;
+          width: 110px;
+          letter-spacing: 2px;
+
+          span {
+            letter-spacing: 0;
+            font-size: 0.6rem;
+          }
+        }
       }
 
-      .notify-button {
-        border-left: solid white 1px;
+      .white-line-content {
+        position: absolute;
+        left: auto;
+        right: -179px;
+        top: -17px;
+        bottom: auto;
+        background-color: #fff;
+        height: 9px;
+        width: 68px;
       }
     }
 
     .informative-text {
-        border: solid white 5px;
-        color: white;
+      border: solid white 5px;
+      color: white;
+      width: 300px;
+      margin-top: 100px;
+      margin-bottom: 50px;
     }
+  }
+
+  .footer {
+    .date-text {
+      color: white;
+    }
+  }
+
+  .star-red-container {
+    position: absolute;
+    top: auto;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    height: 70px;
+    width: 70px;
+    background-color: #fff;
+    padding: 10px;
   }
 }
 
