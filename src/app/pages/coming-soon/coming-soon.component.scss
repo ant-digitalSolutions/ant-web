@@ -1,0 +1,88 @@
+@import "/src/styles.scss";
+
+* {
+    font-family: "Figtree";
+}
+
+.outer-container {
+  background-color: $main-red;
+  border: solid white 20px;
+  max-width: 860px;
+
+  height: 100%;
+  //   position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+
+  .header {
+    position: relative;
+    h1 {
+      font-size: 9rem;
+      color: white;
+      font-weight: 700;
+      text-transform: uppercase;
+      
+      letter-spacing: 47px;
+      text-align: initial;
+      vertical-align: top;
+      margin-top: -37px;
+      margin-left: -13px;
+    }
+
+    .white-line {
+      height: 19px;
+      width: 178px;
+      background-color: white;
+      position: absolute;
+      right: 0;
+      left: auto;
+      top: auto;
+      bottom: 81px;
+    }
+  }
+
+  .main-content {
+    position: relative;
+    .star-white {
+      position: absolute;
+      color: white;
+      right: auto;
+      left: 30px;
+      bottom: auto;
+      top: 30px;
+      height: 62px;
+    }
+
+    .identity-container {
+    }
+
+    .email-form {
+      border-bottom: solid white 1px;
+      width: 200px;
+      input {
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 0.6rem;
+        font-weight: 300;
+      }
+
+      .notify-button {
+        border-left: solid white 1px;
+      }
+    }
+
+    .informative-text {
+        border: solid white 5px;
+        color: white;
+    }
+  }
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
