@@ -174,6 +174,7 @@ import { ServicesDetailsComponent } from './pages/services-details/services-deta
 import { BlogDetailsComponent } from './pages/blog-details/blog-details.component';
 import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
 import { TermsConditionsComponent } from './pages/terms-conditions/terms-conditions.component';
+import { ComingSoonComponent } from './pages/coming-soon/coming-soon.component';
 
 @NgModule({
     declarations: [
@@ -342,6 +343,7 @@ import { TermsConditionsComponent } from './pages/terms-conditions/terms-conditi
         BlogDetailsComponent,
         PrivacyPolicyComponent,
         TermsConditionsComponent,
+        ComingSoonComponent,
     ],
     imports: [
         BrowserModule,
