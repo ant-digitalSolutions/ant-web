@@ -1,10 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
+$main-red: #CA0602;
+$main-gray: #CCCCCC;
+
+// @font-face {
+//   font-family: "Gotham-bold";
+//   src: url("./assets/gotham-pro/bold/GothamBold.otf");
+// }
+
 :root {
-    --fontFamily: 'Roboto', sans-serif;
+    --fontFamily: 'Figtree', 'Roboto', sans-serif;
     --headingFontFamily: 'League Spartan', sans-serif;
     --gradientColor: linear-gradient(to left top, #ff2c9c, #ff287b, #ff395a, #ff5137, #ff6a00);
-    --primaryColor: #f9004d;
-    --optionalColor: #777B83;
+    --primaryColor: $main-red;
+    --optionalColor: $main-gray;
     --whiteColor: #ffffff;
     --blackColor: #18181b;
     --transition: .5s;

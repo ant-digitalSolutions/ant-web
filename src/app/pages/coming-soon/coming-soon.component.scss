@@ -1,0 +1,250 @@
+@import "/src/styles.scss";
+// Required
+@import "~bootstrap/scss/functions";
+
+// Default variable overrides
+$body-bg: #000;
+$body-color: #111;
+
+// Required
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+* {
+  font-family: "Figtree";
+}
+
+.outer-container {
+  font-family: "Figtree";
+  background-color: $main-red;
+  border: solid white 20px;
+  max-width: 860px;
+
+  height: 100%;
+  //   position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+
+  position: relative;
+
+  .header {
+    position: relative;
+    h1 {
+      font-size: 9rem;
+      color: white;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: initial;
+      vertical-align: top;
+
+      @include media-breakpoint-between(lg, xl) {
+      }
+
+      @include media-breakpoint-between(md, lg) {
+        font-size: 8rem;
+        letter-spacing: 30px;
+        margin-top: -24px;
+        margin-left: -5px;
+      }
+
+      @include media-breakpoint-down(md) {
+        font-size: 7rem;
+        letter-spacing: 22px;
+        margin-top: -20px;
+        margin-left: -7px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        font-size: 4rem;
+        letter-spacing: 20px;
+        margin-top: -12px;
+        margin-left: -3px;
+      }
+
+      @media (min-width: 850px) {
+        font-size: 9rem;
+        letter-spacing: 47px;
+        margin-top: -26px;
+        margin-left: -10px;
+      }
+    }
+  }
+
+  .main-content {
+    position: relative;
+    .star-white {
+      position: absolute;
+      color: white;
+      right: auto;
+      bottom: auto;
+    }
+
+    .identity-container {
+      img {
+        max-width: 75%;
+      }
+    }
+
+    .email-form {
+      border-bottom: solid white 1px;
+      max-width: 350px;
+      margin-top: 40px;
+      position: relative;
+      width: 85%;
+      input,
+      button {
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 0.6rem;
+        font-weight: 300;
+        letter-spacing: 3px;
+
+        &.email {
+          width: 70%;
+          min-width: 150px;
+        }
+        &.notify-btn {
+          border-left: solid white 1px;
+          font-size: 0.5rem;
+          max-width: 100px;
+          width: 30%;
+          letter-spacing: 2px;
+          min-width: 83px;
+
+          span {
+            letter-spacing: 0;
+            font-size: 0.6rem;
+          }
+        }
+      }
+
+      .white-line-content {
+        position: absolute;
+        left: auto;
+        right: -179px;
+        top: -17px;
+        bottom: auto;
+        background-color: #fff;
+        height: 9px;
+        width: 68px;
+      }
+    }
+
+    .informative-text {
+      border: solid white 5px;
+      color: white;
+      width: 300px;
+      margin-top: 100px;
+      margin-bottom: 50px;
+
+      h3 {
+        color: white;
+        font-family: "Figtree";
+      }
+
+      ul {
+        list-style: none;
+        padding-left: 9px;
+        font-family: "Figtree";
+
+        li {
+          &::before {
+            content: '_';
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    .date-text {
+      color: white;
+    }
+  }
+
+  .star-red-container {
+    position: absolute;
+    top: auto;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    height: 70px;
+    width: 70px;
+    background-color: #fff;
+    padding: 10px;
+  }
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.white-line {
+  background-color: white;
+  position: absolute;
+  right: 0;
+  left: auto;
+  top: auto;
+}
+
+@include media-breakpoint-down(sm) {
+  .star-white {
+    left: 18px;
+    top: 14px;
+    height: 44px;
+  }
+
+  .white-line {
+    height: 10px;
+    width: 94px;
+    bottom: 46px;
+  }
+}
+
+@include media-breakpoint-between(sm, md) {
+  .star-white {
+    left: 30px;
+    top: 11px;
+    height: 43px;
+  }
+
+  .white-line {
+    height: 16px;
+    width: 164px;
+    bottom: 73px;
+  }
+}
+
+@include media-breakpoint-between(md, lg) {
+  .star-white {
+    left: 30px;
+    top: 30px;
+    height: 62px;
+  }
+
+  .white-line {
+    height: 18px;
+    width: 164px;
+    bottom: 84px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .star-white {
+    left: 30px;
+    top: 30px;
+    height: 62px;
+  }
+
+  .white-line {
+    height: 18px;
+    width: 164px;
+    bottom: 97px;
+  }
+}
