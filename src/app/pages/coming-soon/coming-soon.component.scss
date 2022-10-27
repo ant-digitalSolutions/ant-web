@@ -140,6 +140,24 @@ $body-color: #111;
       width: 300px;
       margin-top: 100px;
       margin-bottom: 50px;
+
+      h3 {
+        color: white;
+        font-family: "Figtree";
+      }
+
+      ul {
+        list-style: none;
+        padding-left: 9px;
+        font-family: "Figtree";
+
+        li {
+          &::before {
+            content: '_';
+            color: white;
+          }
+        }
+      }
     }
   }
 
@@ -177,7 +195,7 @@ $body-color: #111;
 
 @include media-breakpoint-down(sm) {
   .star-white {
-     left: 18px;
+    left: 18px;
     top: 14px;
     height: 44px;
   }
@@ -191,7 +209,7 @@ $body-color: #111;
 
 @include media-breakpoint-between(sm, md) {
   .star-white {
-       left: 30px;
+    left: 30px;
     top: 11px;
     height: 43px;
   }
