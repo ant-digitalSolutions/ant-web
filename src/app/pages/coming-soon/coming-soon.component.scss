@@ -18,7 +18,8 @@ $body-color: #111;
   font-family: "Figtree";
   background-color: $main-red;
   border: solid white 20px;
-  max-width: 860px;
+  max-width: 1044px;
+  min-width: 400px;
 
   height: 100%;
   //   position: fixed;
@@ -32,6 +33,7 @@ $body-color: #111;
 
   .header {
     position: relative;
+    padding-left: 12px;
     h1 {
       font-size: 9rem;
       color: white;
@@ -40,7 +42,8 @@ $body-color: #111;
       text-align: initial;
       vertical-align: top;
 
-      @include media-breakpoint-between(lg, xl) {
+      @media (max-width: 400px) {
+        font-size: 3rem !important;
       }
 
       @include media-breakpoint-between(md, lg) {
@@ -125,35 +128,34 @@ $body-color: #111;
       .white-line-content {
         position: absolute;
         left: auto;
-        right: -179px;
-        top: -17px;
+
         bottom: auto;
         background-color: #fff;
-        height: 9px;
-        width: 68px;
       }
     }
 
     .informative-text {
-      border: solid white 5px;
+      border: solid white 4px;
       color: white;
       width: 300px;
       margin-top: 100px;
-      margin-bottom: 50px;
+      margin-bottom: 100px;
 
       h3 {
         color: white;
         font-family: "Figtree";
+        font-weight: 400;
       }
 
       ul {
         list-style: none;
         padding-left: 9px;
         font-family: "Figtree";
+        font-weight: 100;
 
         li {
           &::before {
-            content: '_';
+            content: "_";
             color: white;
           }
         }
@@ -197,13 +199,20 @@ $body-color: #111;
   .star-white {
     left: 18px;
     top: 14px;
-    height: 44px;
+    height: 28px;
   }
 
   .white-line {
     height: 10px;
     width: 94px;
     bottom: 46px;
+  }
+
+  .white-line-content {
+    height: 7px;
+    width: 45px;
+    right: -179px;
+    top: -17px;
   }
 }
 
