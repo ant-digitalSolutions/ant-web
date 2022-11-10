@@ -1,7 +1,16 @@
+@import "src/common/styles/colors.scss";
+// Required
+@import "~bootstrap/scss/functions";
+
+// Default variable overrides
+$body-bg: #000;
+$body-color: #111;
+
+// Required
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
 .navbar-area {
-    &.bg-light {
-        background-color: transparent !important;
-    }
     &.navbar {
         position: fixed !important;
         transition: .3s;
@@ -16,7 +25,6 @@
         };
         &.sticky-box-shadow {
             transition: .3s;
-            background-color: var(--whiteColor) !important;
             box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
             padding: {
                 top: 13px;
@@ -31,13 +39,13 @@
                 };
                 .nav-link {
                     transition: var(--transition);
-                    color: var(--blackColor);
+                    color: var(--whiteColor);
                     position: relative;
                     cursor: pointer;
                     padding: 0;
                     font: {
                         family: var(--headingFontFamily);
-                        weight: 500;
+                        weight: 300;
                         size: 19px;
                     };
                     &::before {
@@ -51,8 +59,7 @@
                         background: var(--gradientColor);
                     }
                     &:hover, &.active {
-                        color: var(--blackColor);
-    
+                        color: $main-gray;
                         &::before {
                             width: 100%;
                         }
@@ -89,7 +96,7 @@
     &.color-white {
         &.navbar {
             &.sticky-box-shadow {
-                background-color: var(--blackColor) !important;
+                // background-color: var(--blackColor) !important;
             }
             .navbar-nav {
                 .nav-item {

@@ -25,7 +25,8 @@ import { StudioAgencyDemoComponent } from './pages/studio-agency-demo/studio-age
 import { TermsConditionsComponent } from './pages/terms-conditions/terms-conditions.component';
 
 const routes: Routes = [
-    { path: '', component: ComingSoonComponent },
+    // { path: '', component: ComingSoonComponent },
+    { path: '', component: DigitalAgencyDemoComponent },
     {path: 'digital-agency', component: DigitalAgencyDemoComponent},
     {path: 'creative-agency', component: CreativeAgencyDemoComponent},
     {path: 'it-agency', component: ItAgencyDemoComponent},
