@@ -175,6 +175,7 @@ import { BlogDetailsComponent } from './pages/blog-details/blog-details.componen
 import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
 import { TermsConditionsComponent } from './pages/terms-conditions/terms-conditions.component';
 import { ComingSoonComponent } from './pages/coming-soon/coming-soon.component';
+import { ActionBannerComponent } from './pages/digital-agency-demo/action-banner/action-banner.component';
 
 @NgModule({
     declarations: [
@@ -344,6 +345,7 @@ import { ComingSoonComponent } from './pages/coming-soon/coming-soon.component';
         PrivacyPolicyComponent,
         TermsConditionsComponent,
         ComingSoonComponent,
+        ActionBannerComponent,
     ],
     imports: [
         BrowserModule,

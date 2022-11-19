@@ -1,0 +1,59 @@
+@import "src/common/styles/colors.scss";
+
+.main-banner {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  // padding: {
+  //     top: 250px;
+  //     bottom: 200px;
+  // };
+
+  background-color: $main-red;
+
+  .text-container {
+    color: #fff;
+    margin-top: 15px;
+
+    h2 {
+      color: #fff;
+
+      font-family: "Figtree";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 39px;
+      /* or 162% */
+
+      text-align: center;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+  }
+
+  p.sub-title {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+}
+
+.btn-container {
+    margin-top: 30px;
+}
+
+  .star-red-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: auto;
+    height: 48px;
+    width: 48px;
+    background-color: #fff;
+    padding: 6px;
+
+    img {
+        height: 100%;
+        width: auto;
+    }
+  }

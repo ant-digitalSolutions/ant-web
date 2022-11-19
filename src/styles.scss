@@ -11,17 +11,22 @@
   background-color: #ca0602 !important;
 }
 
+.btn {
+  font-size: 20px;
+  border-radius: 0;
+    padding: 17px 22px;
+}
+
 .btn-white {
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
   line-height: 0px;
   color: $main-red;
   background-color: #fff;
   transition: var(--transition);
   color: $main-red;
   display: inline-block;
-  padding: 18px 18px;
+
   border-radius: 0;
   position: relative;
   border: none;
@@ -46,6 +51,17 @@
       visibility: hidden;
     }
   }
+}
+
+.btn-red {
+  background-color: $main-red;
+  border: #fff 1px solid;
+  color: #fff;
+  font-weight: 300;
+  line-height: 14px;
+  border-radius: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.11rem;
 }
 
 :root {
