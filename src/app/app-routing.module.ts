@@ -1,3 +1,4 @@
+import { ComingSoonComponent } from './pages/coming-soon/coming-soon.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NotFoundComponent } from './common/not-found/not-found.component';
@@ -24,7 +25,9 @@ import { StudioAgencyDemoComponent } from './pages/studio-agency-demo/studio-age
 import { TermsConditionsComponent } from './pages/terms-conditions/terms-conditions.component';
 
 const routes: Routes = [
-    {path: '', component: DigitalAgencyDemoComponent},
+    // { path: '', component: ComingSoonComponent },
+    { path: '', component: DigitalAgencyDemoComponent },
+    {path: 'digital-agency', component: DigitalAgencyDemoComponent},
     {path: 'creative-agency', component: CreativeAgencyDemoComponent},
     {path: 'it-agency', component: ItAgencyDemoComponent},
     {path: 'marketing-agency', component: MarketingAgencyDemoComponent},
