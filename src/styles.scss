@@ -354,9 +354,17 @@ p {
   h2 {
     margin-bottom: 0;
     font-size: 45px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 44px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: $main-red;
   }
   p {
     max-width: 600px;
+    color: $font-gray;
+    text-align: left;
     margin: {
       top: 8px;
       left: auto;
