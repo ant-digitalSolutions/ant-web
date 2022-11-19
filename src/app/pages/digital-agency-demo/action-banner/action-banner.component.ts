@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-action-banner',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ActionBannerComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router, private renderer: Renderer2) {
+
+   }
 
   ngOnInit(): void {
+  }
+
+  navigateContactUs() {
+    // this.router.navigate([], { 
+    //   fragment: 'contact'
+    // })
+    const contactArea = this.renderer.selectRootElement('#contact');
+    contactArea.scrollIntoView({block: 'end', behavior: 'smooth'});
   }
 
 }
