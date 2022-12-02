@@ -9,6 +9,8 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
+    classApplied = false;
+
     constructor(
         public router: Router,
         private viewportScroller: ViewportScroller
@@ -20,9 +22,7 @@ export class NavbarComponent implements OnInit {
 
     ngOnInit(): void {}
 
-    classApplied = false;
     toggleClass() {
         this.classApplied = !this.classApplied;
     }
-
 }

@@ -195,7 +195,7 @@ $body-color: #111;
             }
         }
         &.active {
-            background-color: var(--whiteColor) !important;
+            background-color: $main-red !important;
             
             .navbar-toggler {
                 .burger-menu {
