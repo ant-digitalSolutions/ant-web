@@ -352,6 +352,14 @@ $body-color: #111;
                 cursor: pointer;
 
                 span {
+                    -webkit-transform: rotate(0deg);
+                    -moz-transform: rotate(0deg);
+                    -o-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                    -webkit-transition: .25s ease-in-out;
+                    -moz-transition: .25s ease-in-out;
+                    -o-transition: .25s ease-in-out;
+                    transition: .25s ease-in-out;
                     height: 2px;
                     width: 30px;
                     margin: 6px 0;
@@ -366,12 +374,21 @@ $body-color: #111;
             .navbar-toggler {
                 .burger-menu {
                     span {
+                        -webkit-transform: rotate(0deg);
+                        -moz-transform: rotate(0deg);
+                        -o-transform: rotate(0deg);
+                        transform: rotate(0deg);
+                        -webkit-transition: .25s ease-in-out;
+                        -moz-transition: .25s ease-in-out;
+                        -o-transition: .25s ease-in-out;
+                        transition: .25s ease-in-out;
                         &.top-bar {
                             transform: rotate(45deg);
                             transform-origin: 10% 10%;
                         }
                         &.middle-bar {
                             opacity: 0;
+                            transform: translateX(-60%);
                         }
                         &.bottom-bar {
                             transform: rotate(-45deg);
